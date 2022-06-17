@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+    min-width: 100vh;
+}
+
+body {
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 100vh;
+}
+
+.column .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: rgb(199, 60, 0) 1px solid;
+}
+
+.column .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+.column:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#header {
+    background: rgba(18, 18, 18, 0.6) url(../img/graficas.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    /* margin-left: 8px; */
+    padding-top: 10px;
+}
+
+#header h1 {
+    font-size: 3em;
+    padding: 60px;
+    padding-bottom: 10px;
+}
+
+/* #header h2 {
+    padding-bottom: 80px;
+} */
+
+.column {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#myTable,
+tr,
+th {
+    border-collapse: collapse;
+}
+
+#myTable {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+#myTable thead {
+    height: 60px;
+    font-size: 1.2em;
+}
+
+#myTable tr {
+    height: 40px;
+    border-bottom: .5px solid black;
+}
+
+#myTable tbody tr:hover {
+    background-color: rgb(193, 193, 193);
+}
+
+#myTable thead th:hover {
+    background-color: rgb(193, 193, 193);
+    cursor: pointer;
+}
+
+.model a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 10px 10px;
+}
+
+.model a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(118, 118, 118);
+    border-radius: 2px;
+}
+
+#calculadora {
+    border: white solid 1px;
+    margin: auto;
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: black;
+    height: 100px;
+}
+
+#calculadora td {
+    border: black solid 2px;
+}
+
+#calculadora input,
+button {
+    height: 100%;
+    background-color: white;
+    color: black;
+}
+
+#calculadora input::placeholder {
+    color: black;
+}
+
+#calculadora #resultado {
+    color: black;
+    text-align: center;
+    height: 50px;
+}
+
+#calcular:hover {
+    background-color: rgb(224, 176, 176);
+}
+
+
+
+/* #myTablep tr { display: block; float: left; }
+#myTablep th, #myTablep td { display: block; } */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 50%;
+    }
+
+    #myTable {
+        margin: auto;
+        min-width: 97%;
+        min-height: 5000px;
+    }
+
+    #myTable thead {
+        min-height: 5000px;
+        font-size: 1.5em;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+
+    #header h1 {
+        font-size: 4em;
+        padding: 90px;
+        padding-bottom: 20px;
+    }
+
+    /* #header h2 {
+        padding-bottom: 90px;
+    } */
+}
+
+@media screen and (max-width: 1200px) {
+    .priority-3 {
+        display: none;
+    }
+
+    .column {
+        width: 50%;
+    }
+}

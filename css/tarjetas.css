@@ -1,0 +1,24 @@
+.texthead {
+    font-size: 1.4em;
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom: 35px;
+    /* border-bottom: black 1px solid; */
+    padding: 1.5%;
+    box-shadow: rgb(145, 145, 145) 0px 5px 15px;
+    border-radius: 2px;
+}
+.image {
+    max-width: 500px;
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+
+    .priority-3{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
